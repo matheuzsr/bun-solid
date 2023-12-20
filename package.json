@@ -1,0 +1,11 @@
+{
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "bun src/main.ts",
+    "dev": "bun --hot src/main.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
