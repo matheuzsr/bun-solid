@@ -4,11 +4,6 @@ export default class Client {
     private lastName: string,
     private contact: Contact) { }
 
-  validateEmail(email: string) {
-    const re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i
-    return re.test(email)
-  }
-
   toJSON() {
     const { name, lastName, contact } = this
 
