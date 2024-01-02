@@ -1,43 +1,30 @@
-# bun-docker
+# SOLID Principles
 
-> Deploy a simple Bun [HTTP server](https://bun.sh/docs/api/http) on Render
+Este repositório apresenta exemplos práticos para cada um dos cinco princípios SOLID, implementados em JavaScript com o auxílio do Bundler. Cada princípio é ilustrado por um exemplo de implementação incorreta (violando o princípio) e uma implementação correta (respeitando o princípio).
 
-[Bun](https://bun.sh/) is a JavaScript runtime that serves as a bundler, test runner, and package manager.
+## Princípios SOLID
 
-## Prerequisites
+Os princípios SOLID são diretrizes de design de software que buscam criar sistemas mais compreensíveis, flexíveis e sustentáveis. Os cinco princípios são:
 
-Refer to the [Bun documentation](https://bun.sh/docs/installation) to install Bun.
+1. **SRP - Princípio da Responsabilidade Única**
+2. **OCP - Princípio Aberto/Fechado**
+3. **LSP - Princípio da Substituição de Liskov**
+4. **ISP - Princípio da Segregação de Interface**
+5. **DIP - Princípio da Inversão de Dependência**
 
-## Usage
+## Estrutura do Repositório
 
-### `bun install`
+O repositório está organizado em pastas, cada uma correspondente a um princípio SOLID. Dentro de cada pasta, há exemplos de implementações incorretas e corretas.
 
-To run this app locally, first run `bun install` to install the dependencies.
 
-### `bun dev`
+## Como Usar
 
-Run `bun dev` to start the server locally.
+1. Escolha o princípio SOLID que deseja entender melhor.
+2. Navegue até a pasta correspondente.
+3. Analise os exemplos de código incorreto e correto para compreender as diferenças e aprender como aplicar o princípio em seus próprios projetos JavaScript.
 
-Running the app in dev uses the [`--hot` reload flag](https://bun.sh/docs/runtime/hot#hot-mode), which Bun uses to re-run changed files without restarting the `bun` process.
+## Contribuições
 
-The server will run on port `8081` if not `PORT` is specified. Visit [http://localhost:8081](http://localhost:8081) to view the app.
+Contribuições são bem-vindas! Se deseja adicionar exemplos novos para princípios ou melhorar os existentes, sinta-se à vontade para criar uma pull request.
 
-### `bun start`
-
-Run `bun start` to start the server locally without the `--hot` reload flag.
-
-## Deploy to Render
-
-Use the official [Bun Docker image](https://hub.docker.com/r/oven/bun) to deploy this app to Render.
-
-### Manual deploy
-
-1. [Fork this repo](https://github.com/render-examples/bun-docker/fork) on GitHub or click **Use this template**.
-2. Create a new **web service** on Render, and give Render permission to access your new repo.
-3. Select **Docker** as your service's runtime.
-
-That's it! Your web service will be live on your Render URL as soon as the build finishes.
-
-### One-click deploy
-
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/render-examples/bun-docker)
+Vamos juntos fortalecer nossas habilidades de design de software!
