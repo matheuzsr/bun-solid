@@ -15,12 +15,9 @@ export class Contact {
   private email: string
 
   constructor(email: string) {
-    if (this.validateEmail(email)) {
-      this.email = email
-    }
-    else {
-      throw new Error("Invalid email!")
-    }
+    if (!this.validateEmail(email)) throw new Error("Invalid email!")
+    
+    this.email = email
   }
 
   private validateEmail(email: string) {
